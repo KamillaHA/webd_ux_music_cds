@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css"></style>
+    <script src="js/script.js" defer></script>
+    <title>Music CD´s | </title>
+</head>
+<body>
+    <header>
+        <h1>Music CD´s</h1>
+    </header>
+
+    <main>
+
+<!-- Section 1 - Form -->
+        <form id="frmCD">
+            <div>
+                <label for="txtAuthor">Author</label>
+                <input type="text" class="txtInput" id="txtAuthor" required>
+            </div>
+            <div>
+                <label for="txtTitle">Title</label>
+                <input type="text" class="txtInput" id="txtTitle" required>
+            </div>
+            <div>
+                <label for="txtYear">Year</label>
+                <input type="number" id="txtYear" min="1982" pattern="[0-9] {4}" required>
+            </div>
+            <div>
+                <input type="submit" value="Add" >
+            </div>
+        </form>
+
+<!-- Section 2 - Adding new CD -->
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Author</th>
+                        <th>Title</th>
+                        <th class="right">Year</th>
+                        <th class="right"></th>
+                    </tr>
+                </thead>
+                <!-- Template -->
+                <tbody>
+                    <template id="cdRow">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td class="right"></td>
+                            <td class="right"><img src="img/trash.png" class="delete" alt="Delete CD from table"></td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Kamilla Huhnke - Web Development - 2025</p>
+    </footer>
+</body>
+</html>
