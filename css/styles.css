@@ -25,6 +25,8 @@ header {
     padding: 0.5rem 0 0.5rem 2rem;
     color: var(--colorText);
     background-color: var(--colorPrimary);
+    text-align: center;
+    margin-bottom: 4rem;
 }
 
 /* Main */
@@ -44,6 +46,7 @@ main {
 /* CD Table */
 table {
     visibility: hidden;
+    margin-top: 6rem;
     width: 100%;
     table-layout: auto;
     border: solid thin var(--colorPrimary);    
@@ -94,6 +97,7 @@ form {
             font-size: 1.2rem;    
             color: var(--colorText);
             background-color: var(--colorBtn);
+            float: right;
         }
     }
 }
