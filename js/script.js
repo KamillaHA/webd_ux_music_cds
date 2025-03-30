@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', loadFromLocalStorage);
 
 // Adding eventlistener "submit" to the form
 document.querySelector('#frmCD').addEventListener('submit', function(e) {
-// Preventing default pageloading
+    // Preventing default pageloading
     e.preventDefault();
 
 // Declaring the variables
